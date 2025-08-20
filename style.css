@@ -20,10 +20,10 @@ body {
     padding: 5px;
 }
 
-img:hover {
+/* img:hover {
     transition: 2s;
     transform: scale(1.5);
-}
+} */
 
 .modal-body #form-control {
     background-color: rgb(61, 20, 20);
