@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baristars!.</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+   
+</head>
+<body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg bg-muted navbar-light">
+        <a href="index.html" class="navbar-brand">Baristars.</a>
+        <div>
+            <img src="./images/image1.png" alt="" style="width: 5%; height: 5%;">
+        </div>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <br>
+            
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="index.html" class="nav-link active">home</a>
+                <a href="about.html" class="nav-link">about</a>
+                <a href="menu.html" class="nav-link">our team</a>
+              
+            </div>
+            <div class="mine ms-auto">
+               <a href="./signup.html" class="btn btn-outline-primary me-2">Sign Up</a>
+               <a href="./login.html" class="btn btn-outline-primary me-2">Log In</a>
+             
+            </div>
+            
+        </div>
+    </nav>
+    <!-- navbar end -->
+   
+    <section class="row">
+        <div class="col-md-7 mx-auto">
+            <div class="card shadow p-2">
+                <div class="card-body">
+                    <h3>Create An Account</h3>
+                    <span style="color: green;">{{success}}</span>
+                    <form action="">
+                        <input type="text" name="username" placeholder="Your Username" class="form-control">
+                        <br>
+                        <input type="email" name="email" placeholder="Your Email" class="form-control">
+                        <br>
+                        <input type="tel" name="phone" placeholder="Your Phone:+254700000000" class="form-control">
+                        <br>
+                        <input type="password" name="password1" placeholder="Your Password" class="form-control">
+                        <br>
+                      
+                        <input type="password" name="password2" placeholder="Confirm Password" class="form-control">
+                        <br>
+                       
+                        <input type="submit" class="btn btn-info" value="Sign Up">
+
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    </div>
+
+   <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="./signup.js"></script>
+   
+   
+   </body>
+   </html>

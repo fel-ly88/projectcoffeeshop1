@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baristars!</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+   
+</head>
+
+<body>
+    <marquee behavior="" direction="right">Welcome To Baristars</marquee>
+    <br>
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-muted navbar-light">
+        <a href="index.html" class="navbar-brand">Baristars.</a>
+        <div>
+            <img src="./images/image1.png" alt="" style="width: 5%; height: 5%;">
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+              
+            </div>
+            <div class="mine ms-auto">
+                <a href="./signup.html" class="btn btn-outline-primary me-2">Sign Up</a>
+                <a href="./login.html" class="btn btn-outline-primary me-2">Log In</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Order Modal -->
+    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#orderModal">
+        Order Now
+    </button>
+
+    <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="orderModalLabel">Manage Your Order</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="orderForm" method="post">
+                        <div class="mb-3">
+                            <label for="customerName" class="form-label">Name:</label>
+                            <input type="text" id="customerName" name="customerName" class="form-control" placeholder="Enter Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="customerTable" class="form-label">Table no:</label>
+                            <select id="coffeeTable" name="coffeeTable" class="form-select">
+                                <option value="table1">Table 1</option>
+                                <option value="table2">Table 2</option>
+                                <option value="table3">Table 3</option>
+                                <option value="table4">Table 4</option>
+                                <option value="table5">Table 5</option>
+                                <option value="table6">Table 6</option>
+                             
+                            </select>
+                           
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="coffeeTypes" class="form-label">Type of Coffee:</label>
+                            <select id="coffeeTypes" name="coffeeTypes" class="form-select">
+                                <option value="coffee1">Coffee 1</option>
+                                <option value="coffee2">Coffee 2</option>
+                                <option value="coffee3">Coffee 3</option>
+                                <option value="coffee4">Coffee 4</option>
+                                <option value="coffee5">Coffee 5</option>
+                                <option value="coffee6">Coffee 6</option>
+                                <option value="coffee7">Coffee 7</option>
+                                <option value="coffee8">Coffee 8</option>
+                                <option value="coffee9">Coffee 9</option>
+                                <option value="coffee10">Coffee 10</option>
+                                <option value="coffee11">Coffee 11</option>
+                                <option value="coffee12">Coffee 12</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="customerQuantity" class="form-label">Quantity:</label>
+                            <select id="coffeeQuantity" name="coffeeQuantity" class="form1-select">
+                                <option value="quantity1">100 ml</option>
+                                <option value="quantity2">200 ml</option>
+                                <option value="quantity3">300 ml</option>
+                                <option value="quantity4">400 ml</option>
+                                <option value="quantity5">500 ml</option>
+
+                            
+                            </select>
+                        </div>
+
+                        <div class="d-flex justify-content-between mt-4">
+                            <button type="submit" class="btn btn-success" id="createButton">Create</button>
+                            <button type="button" class="btn btn-primary" id="updateButton">Update</button>
+                            <button type="button" class="btn btn-danger" id="deleteButton">Delete</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carousel Start -->
+    <section class="row">
+        <div class="col-md-12">
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-pause="hover">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./images/slide1.jpg" class="d-block w-100 img-fluid" alt="Slide 1" height="400">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/slide2.jpg" class="d-block w-100 img-fluid" alt="Slide 2" height="400">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Carousel End -->
+
+
+    <h2>THE BEST COFFEE.</h2>    
+    <!-- first section start-->
+    <section class="row">
+        <div class="col-md-4">
+            <img src="./images/coffee1.avif" alt="image 1" style="width: 80%; height: 60%;">
+            <p class="myClass">Alcohol; Has Sugar.</p>
+            <b class="myClass ">KES 10</b><br>
+            <span class="myClass badge bg-danger">Coffee 1</span>
+        </div>
+        <div class="col-md-4">
+            <img src="./images/coffee2.avif" alt="image 2" style="width: 80%; height: 60%;">
+            <p class="myClass">The best taste you can get.</p>
+            <b class="myClass ">KES 20</b><br>
+            <span class="myClass badge bg-danger">Coffee 2</span>
+        </div>
+        <div class="col-md-4">
+            <img src="./images/coffee3.avif" alt="image 2" style="width: 80%; height: 60%;">
+            <p class="myClass">Very sweet.</p>
+            <b class="myClass ">KES 50</b><br>
+            <span class="myClass badge bg-danger">Coffee 3</span>
+        </div>
+    </section>
+    <!-- first section end -->
+    <h2>OUR PRODUCTS.</h2>
+    <br><br>
+    <!-- second section start -->
+    <section class="row">
+    <div class="col-md-4">
+        <img src="./images/coffee7.jpg" alt="image 1" style="width: 80%; height: 60%;">
+        <p class="myClass">You will love it</p>
+        <b class="myClass ">KES 30</b><br>
+        <span class="myClass badge bg-danger">Coffee 4</span>
+    </div>
+    <div class="col-md-4">
+        <img src="./images/coffee8.jpg" alt="image 2" style="width: 80%; height: 60%;">
+        <p class="myClass">Come get yours today.</p>
+        <b class="myClass ">KES 40</b><br>
+        <span class="myClass badge bg-danger">Coffee 5</span>
+    </div>
+    <div class="col-md-4">
+        <img src="./images/coffee9.jpg" alt="image 2" style="width: 80%; height: 60%;">
+        <p class="myClass">you can order yours today</p>
+        <b class="myClass ">KES 20</b><br>
+        <span class="myClass badge bg-danger">Coffee 6</span>
+    </div>
+</section>
+<hr>
+<!-- second section end -->
+<br><br>
+<!-- third section start -->
+<section class="row">
+    <div class="col-md-4">
+        <img src="./images/coffee10.jpg" alt="image 2" style="width: 80%; height: 60%;">
+        <p class="myClass">buy it</p>
+        <b class="myClass ">KES 25</b><br>
+        <span class="myClass badge bg-danger">Coffee 7</span>
+    </div>
+    <div class="col-md-4">
+        <img src="./images/coffee11.jpg" alt="image 2" style="width: 80%; height: 60%;">
+        <p class="myClass">you will love it</p>
+        <b class="myClass ">KES 35</b><br>
+        <span class="myClass badge bg-danger">Coffee 8</span>
+    </div>
+    <div class="col-md-4">
+        <img src="./images/image16.webp" alt="image 2" style="width: 80%; height: 60%;">
+        <p class="myClass">so tasty</p>
+        <b class="myClass ">KES 35</b><br>
+        <span class="myClass badge bg-danger">Coffee 9</span>
+    </div>
+
+    </div>
+ 
+</section>
+<hr>
+<!-- third section end -->
+<br><br>
+<!-- fourth section start -->
+<section class="row">
+    <div class="col-md-4">
+        <img src="./images/coffee13.jpg" alt="image 2" style="width: 80%; height: 60%;">
+        <p class="myClass">so tasty</p>
+        <b class="myClass ">KES 50</b><br>
+        <span class="myClass badge bg-danger">coffee 10</span>
+
+    </div>
+    <div class="col-md-4">
+        <img src="./images/coffee14.jpg" alt="image 2" style="width: 80%; height: 60%;">
+        <p class="myClass">so tasty</p>
+        <b class="myClass ">KES 15</b><br>
+        <span class="myClass badge bg-danger">Coffee 11</span>
+    </div>
+    <div class="col-md-4">
+        <img src="./images/ image15.avif" alt="image 2" style="width: 80%; height: 60%;">
+        <p class="myClass">so tasty</p>
+        <b class="myClass ">KES 10</b><br>
+        <span class="myClass badge bg-danger">Coffee 12</span>
+
+    </div>
+
+</section>
+<hr>
+    <!-- fourth section end -->
+    <hr>
+        <!-- footer start -->
+        <!-- sixth section start -->
+<section class="row">
+    <div class="col-md-4">
+        <h2>About us.</h2>
+        <p>At Baristars, we believe that every cup of coffee is an experience. From the finest beans sourced from ethical farms around the globe to the artful roasting process, we take pride in delivering rich flavors with every sip. Whether you prefer a bold espresso to kickstart your day or a smooth latte to unwind, we’ve curated a selection of blends that cater to every taste. Each brew is crafted with passion and precision, ensuring your coffee moment is nothing short of perfection. Join us on this journey of flavor, aroma, and community—because great coffee is more than just a beverage; it’s a lifestyle.</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Get in touch.</h2>
+        <form action="">
+            <input type="email" placeholder="enter email" class="form-control">
+        </form>
+        <br><br>
+        <textarea name="" id="" cols="30" rows="5" placeholder="leave a comment" class="form-control"></textarea>
+        <br>
+        <button class="btn btn-danger">send mesage</button>
+    </div>
+    <div class="col-md-4">
+        <h2>stay connected</h2>
+        <a href="">
+            <img src="./images/twitter.avif" alt="twitter" style="height: 30%; width: 30%;">
+        </a>
+        <a href="">
+            <img src="./images/instagram.avif" alt="instagram" style="height: 30%; width: 30%;">
+        </a>
+        <ol>
+            <li>+254 723467598</li>
+            <li>Nairobi city.</li>
+            <li>Barismart coffee shop.</li>
+        </ol>
+
+    </div>
+    </div>
+    <!-- sixth section end -->
+    <footer class="bg-dark text-center p-2">
+        <b class="text-light">developed by Felister Nyambura. &copy; 2024.All Rights Reserved</b>
+    </footer>
+    </div>
+
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./index.js"></script>
+
+
+</body>
+</html>
